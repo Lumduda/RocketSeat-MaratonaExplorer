@@ -34,7 +34,7 @@ body.dark-pink {
 
 body {
   background: var(--bg-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
 
@@ -63,7 +63,7 @@ h1 {
 }
 
 .username {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 400;
   opacity: 0.8;
   font-size: 18px;
@@ -104,4 +104,40 @@ footer:hover {
 
 footer a {
   color: var(--text-color);
+}
+
+input.checkbox {
+  display: block;
+
+  width: 50px;
+  height: 25px;
+  appearance: none;
+  background-color: #dae2df;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  position: relative;
+  margin: 60px auto;
+}
+
+input.checkbox:checked[type="checkbox"] {
+  background-color: #3decb1;
+}
+
+input.checkbox[type="checkbox"]:before {
+  content: " ";
+  width: 25px;
+  height: 25px;
+  background-color: #edf3f1;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+  left: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+input.checkbox:checked[type="checkbox"]:before {
+  left: 25px;
 }
